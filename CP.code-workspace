@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"\"*.m\"": " \"matlab\"",
+			"ostream": "cpp",
+			"iostream": "cpp"
+		}
+	}
+}

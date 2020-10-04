@@ -2,5 +2,22 @@
     "files.associations": {
         "\"*.m\"": " \"matlab\"",
         "ostream": "cpp"
-    }
+    },
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#d6a067",
+        "activityBar.activeBorder": "#e6f8ef",
+        "activityBar.background": "#d6a067",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#e6f8ef",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#cb873f",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#a96d2e",
+        "titleBar.activeBackground": "#cb873f",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#cb873f99",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#cb873f"
 }
