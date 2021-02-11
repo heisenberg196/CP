@@ -1,7 +1,15 @@
 {
     "files.associations": {
         "\"*.m\"": " \"matlab\"",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "random": "cpp",
+        "cmath": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp"
     },
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#d6a067",
@@ -19,5 +27,6 @@
         "titleBar.inactiveBackground": "#cb873f99",
         "titleBar.inactiveForeground": "#15202b99"
     },
-    "peacock.color": "#cb873f"
+    "peacock.color": "#cb873f",
+    "C_Cpp.errorSquiggles": "Disabled"
 }

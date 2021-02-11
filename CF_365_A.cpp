@@ -3,10 +3,12 @@ using namespace std;
 
 int main(){
     int n, k,count=0;
+    cout<<"begin";
     cin>>n>>k;
     while (n--)
     {
         long long int no1, a[k+1]={0};
+        memset(a, 0, k+1);
         bool ans=1;
         cin>>no1;
         long long int no2 = no1;
