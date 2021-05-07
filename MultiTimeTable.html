@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1i2r{background-color:#f8ff00;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-xwmr{background-color:#34ff34;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-d52n{background-color:#32cb00;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-tw5s{background-color:#fe0000;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-tcj5{background-color:#3166ff;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-jywj{background-color:#6434fc;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-t02l{background-color:#6200c9;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-l5iw{background-color:#32cb00;text-align:center;vertical-align:top}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <a  href="#SEM2">SEM 2</a>
+  <a class="active" href="#SEM4">SEM 4</a>
+  <a href="#SEM6">SEM 6</a>
+  <a href="#SEM8">SEM 8</a>
+</div>
+<section id="SEM2">
+<div class="content">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Time Table</th>
+    <th class="tg-c3ow">I<br>(9:15 - 10:15)<br></th>
+    <th class="tg-c3ow">II<br>(10:15 - 11:15)</th>
+    <th class="tg-c3ow">III<br>(11:15 - 12:15)</th>
+    <th class="tg-c3ow">IV<br>(12:15 - 13:15)</th>
+    <th class="tg-0pky"><br><span style="font-weight:400;font-style:normal">(12:15 - 13:15)</span><br></th>
+    <th class="tg-c3ow">V<br>(14:00 -15:00)</th>
+    <th class="tg-c3ow">VI<br>(15:00 - 16:00)</th>
+    <th class="tg-c3ow">VII<br>(16:00 - 17:00)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Monday</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-d52n">CD</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-0pky" rowspan="5">LUNCH</td>
+    <td class="tg-d52n">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-d52n">CN Lab (GL3) CC1</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Tuesday</td>
+    <td class="tg-1i2r">OS</td>
+    <td class="tg-tw5s">Library (GL4)</td>
+    <td class="tg-tcj5">WT Lab (GL1) CC1</td>
+    <td class="tg-d52n">MP</td>
+    <td class="tg-tcj5">CD (T) G2</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">Library (GL3)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wednesdey</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-tw5s">Library (GL1)</td>
+    <td class="tg-d52n">WT Lab (GL2) CC1</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-tw5s">MP Lab (GL1+ GL4) ECE Lab</td>
+    <td class="tg-tcj5">OS Lab (GL4) CC1</td>
+    <td class="tg-tcj5">CN Lab (GL4) CC3</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Thursday</td>
+    <td class="tg-1i2r">CN</td>
+    <td class="tg-jywj">CN</td>
+    <td class="tg-tw5s">MP</td>
+    <td class="tg-tcj5">AI</td>
+    <td class="tg-t02l"><br>MP (T) G3</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CD</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Friday</td>
+    <td class="tg-l5iw">MP Lab (GL3) ECE Lab<br>CN Lab (GL2) CC1<br>Library (GL3)</td>
+    <td class="tg-xwmr">AI</td>
+    <td class="tg-t02l">OS Lab (GL1) CC2</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CN</td>
+    <td class="tg-d52n">AI (T) G2</td>
+    <td class="tg-tcj5">MP</td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+</section>
+
+<section id="SEM4">
+
+<div class="content", id="SEM4">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Time Table</th>
+    <th class="tg-c3ow">I<br>(9:15 - 10:15)<br></th>
+    <th class="tg-c3ow">II<br>(10:15 - 11:15)</th>
+    <th class="tg-c3ow">III<br>(11:15 - 12:15)</th>
+    <th class="tg-c3ow">IV<br>(12:15 - 13:15)</th>
+    <th class="tg-0pky"><br><span style="font-weight:400;font-style:normal">(12:15 - 13:15)</span><br></th>
+    <th class="tg-c3ow">V<br>(14:00 -15:00)</th>
+    <th class="tg-c3ow">VI<br>(15:00 - 16:00)</th>
+    <th class="tg-c3ow">VII<br>(16:00 - 17:00)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Monday</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-d52n">CD</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-0pky" rowspan="5">LUNCH</td>
+    <td class="tg-d52n">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-d52n">CN Lab (GL3) CC1</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Tuesday</td>
+    <td class="tg-1i2r">OS</td>
+    <td class="tg-tw5s">Library (GL4)</td>
+    <td class="tg-tcj5">WT Lab (GL1) CC1</td>
+    <td class="tg-d52n">MP</td>
+    <td class="tg-tcj5">CD (T) G2</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">Library (GL3)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wednesdey</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-tw5s">Library (GL1)</td>
+    <td class="tg-d52n">WT Lab (GL2) CC1</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-tw5s">MP Lab (GL1+ GL4) ECE Lab</td>
+    <td class="tg-tcj5">OS Lab (GL4) CC1</td>
+    <td class="tg-tcj5">CN Lab (GL4) CC3</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Thursday</td>
+    <td class="tg-1i2r">CN</td>
+    <td class="tg-jywj">CN</td>
+    <td class="tg-tw5s">MP</td>
+    <td class="tg-tcj5">AI</td>
+    <td class="tg-t02l"><br>MP (T) G3</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CD</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Friday</td>
+    <td class="tg-l5iw">MP Lab (GL3) ECE Lab<br>CN Lab (GL2) CC1<br>Library (GL3)</td>
+    <td class="tg-xwmr">AI</td>
+    <td class="tg-t02l">OS Lab (GL1) CC2</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CN</td>
+    <td class="tg-d52n">AI (T) G2</td>
+    <td class="tg-tcj5">MP</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="SEM6">
+
+<div class="content", id="SEM6">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Time Table</th>
+    <th class="tg-c3ow">I<br>(9:15 - 10:15)<br></th>
+    <th class="tg-c3ow">II<br>(10:15 - 11:15)</th>
+    <th class="tg-c3ow">III<br>(11:15 - 12:15)</th>
+    <th class="tg-c3ow">IV<br>(12:15 - 13:15)</th>
+    <th class="tg-0pky"><br><span style="font-weight:400;font-style:normal">(12:15 - 13:15)</span><br></th>
+    <th class="tg-c3ow">V<br>(14:00 -15:00)</th>
+    <th class="tg-c3ow">VI<br>(15:00 - 16:00)</th>
+    <th class="tg-c3ow">VII<br>(16:00 - 17:00)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Monday</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-d52n">CD</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-0pky" rowspan="5">LUNCH</td>
+    <td class="tg-d52n">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-d52n">CN Lab (GL3) CC1</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Tuesday</td>
+    <td class="tg-1i2r">OS</td>
+    <td class="tg-tw5s">Library (GL4)</td>
+    <td class="tg-tcj5">WT Lab (GL1) CC1</td>
+    <td class="tg-d52n">Library</td>
+    <td class="tg-tcj5">CD (T) G2</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">Library (GL3)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wednesdey</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-tw5s">Library (GL1)</td>
+    <td class="tg-d52n">WT Lab (GL2) CC1</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-tw5s">MP Lab (GL1+ GL4) ECE Lab</td>
+    <td class="tg-tcj5">OS Lab (GL4) CC1</td>
+    <td class="tg-tcj5">CN Lab (GL4) CC3</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Thursday</td>
+    <td class="tg-1i2r">MP Lab (GL3) ECE Lab<br>CN Lab (GL2) CC1<br>Library (GL3)</td>
+    <td class="tg-jywj">CN</td>
+    <td class="tg-tw5s">MP</td>
+    <td class="tg-tcj5">AI</td>
+    <td class="tg-t02l"><br>MP (T) G3</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">MP</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Friday</td>
+    <td class="tg-l5iw">MP Lab (GL3) ECE Lab<br>CN Lab (GL2) CC1<br>Library (GL3)</td>
+    <td class="tg-xwmr">AI</td>
+    <td class="tg-t02l">OS Lab (GL1) CC2</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CN</td>
+    <td class="tg-d52n">OS (T) G2</td>
+    <td class="tg-tcj5">MP</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section id="SEM8">
+<div class="content", id="SEM8">
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Time Table</th>
+    <th class="tg-c3ow">I<br>(9:15 - 10:15)<br></th>
+    <th class="tg-c3ow">II<br>(10:15 - 11:15)</th>
+    <th class="tg-c3ow">III<br>(11:15 - 12:15)</th>
+    <th class="tg-c3ow">IV<br>(12:15 - 13:15)</th>
+    <th class="tg-0pky"><br><span style="font-weight:400;font-style:normal">(12:15 - 13:15)</span><br></th>
+    <th class="tg-c3ow">V<br>(14:00 -15:00)</th>
+    <th class="tg-c3ow">VI<br>(15:00 - 16:00)</th>
+    <th class="tg-c3ow">VII<br>(16:00 - 17:00)</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">Monday</td>
+    <td class="tg-tw5s">CD</td>
+    <td class="tg-d52n">CD</td>
+    <td class="tg-tw5s">Library (GL4)</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-0pky" rowspan="5">LUNCH</td>
+    <td class="tg-d52n">OS</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-d52n">CN Lab (GL3) CC1</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Tuesday</td>
+    <td class="tg-1i2r">OS</td>
+    <td class="tg-tw5s">Library (GL4)</td>
+    <td class="tg-tcj5">WT Lab (GL1) CC1</td>
+    <td class="tg-d52n">MP</td>
+    <td class="tg-tcj5">CD (T) G2</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">Library (GL3)</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Wednesdey</td>
+    <td class="tg-tw5s">WT</td>
+    <td class="tg-tw5s">Library (GL1)</td>
+    <td class="tg-d52n">WT Lab (GL2) CC1</td>
+    <td class="tg-tw5s">OS</td>
+    <td class="tg-tw5s">MP Lab (GL1+ GL4) ECE Lab</td>
+    <td class="tg-tcj5">OS Lab (GL4) CC1</td>
+    <td class="tg-tcj5">CN Lab (GL4) CC3</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Thursday</td>
+    <td class="tg-1i2r">CN</td>
+    <td class="tg-jywj">CN</td>
+    <td class="tg-tw5s">MP</td>
+    <td class="tg-tcj5">AI</td>
+    <td class="tg-t02l"><br>MP (T) G3</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CD</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Friday</td>
+    <td class="tg-l5iw">MP Lab (GL3) ECE Lab<br>CN Lab (GL2) CC1<br>Library (GL3)</td>
+    <td class="tg-xwmr">AI</td>
+    <td class="tg-t02l">OS Lab (GL1) CC2</td>
+    <td class="tg-tw5s">WT Lab (GL4) CC3</td>
+    <td class="tg-tw5s">CN</td>
+    <td class="tg-d52n">MP Lab (GL3) ECE Lab</td>
+    <td class="tg-tcj5">MP</td>
+  </tr>
+</tbody>
+</table>
+</div>
+</section>
+
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
